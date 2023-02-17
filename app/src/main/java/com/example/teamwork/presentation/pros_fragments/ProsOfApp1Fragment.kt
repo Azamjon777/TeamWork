@@ -29,11 +29,11 @@ class ProsOfApp1Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //предворительно вниз пишется rus или eng...
-        lifecycleScope.launch {
-            val countries = restCountriesApi.getCountryByName("Italy")
-            val oneCountry = countries[0]
-            binding.nextToProsOfApp2.text = oneCountry.cca2.toString()
-        }
+//        lifecycleScope.launch {
+//            val countries = restCountriesApi.getCountryByName("Italy")
+//            val oneCountry = countries[0]
+//            binding.nextToProsOfApp2.text = oneCountry.cca2.toString()
+//        }
         binding.nextToProsOfApp2.setOnClickListener {
             findNavController().navigate(R.id.action_prosOfApp1Fragment_to_prosOfApp2Fragment)
         }

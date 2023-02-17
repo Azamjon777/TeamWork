@@ -27,12 +27,12 @@ class ProsOfApp4Fragment : Fragment() {
             findNavController().navigate(R.id.action_prosOfApp4Fragment_to_prosOfApp5Fragment)
         }
 
-        binding.previousToProsOfApp3.setOnClickListener {
-            findNavController().navigate(R.id.action_prosOfApp4Fragment_to_prosOfApp3Fragment)
-        }
-
         binding.skipTextPros4.setOnClickListener {
             findNavController().navigate(R.id.action_prosOfApp4Fragment_to_registerFragment1)
+        }
+
+        binding.previousToProsOfApp3.setOnClickListener {
+            findNavController().navigate(R.id.action_prosOfApp4Fragment_to_prosOfApp3Fragment)
         }
     }
 }

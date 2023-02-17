@@ -24,4 +24,19 @@
     <string name="text_pros7">Customer Support</string>
     <string name="desc_pros7">Our company also provide you a \n 24/7 customer</string>
     <string name="login_to_system">Login to system</string>
+    <string name="telephone_number">Telephone number</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="enter_the_code_you_get_by_sms">Enter the code you get by SMS</string>
+    <string name="enter_the_code">Enter the code</string>
+    <string name="_00_00">00:00</string>
+    <string name="enter_your_first_and_last_name">Enter your first and last name</string>
+    <string name="first_name">First name</string>
+    <string name="second_name">Second name</string>
+    <string name="enter_your_email_and_password">Enter your email and password</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="short_waiting_period">Short waiting period</string>
+    <string name="several_destinations">Several destinations</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="pros_of_app1_text">Online Taxi</string>
 </resources>

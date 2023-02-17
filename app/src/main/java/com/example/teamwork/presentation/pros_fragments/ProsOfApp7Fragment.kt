@@ -24,7 +24,7 @@ class ProsOfApp7Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.nextToProsOfAppGetStarted.setOnClickListener {
+        binding.nextToRegister.setOnClickListener {
             findNavController().navigate(R.id.action_prosOfApp7Fragment_to_registerFragment1)
         }
         binding.previousToProsOfApp6.setOnClickListener {

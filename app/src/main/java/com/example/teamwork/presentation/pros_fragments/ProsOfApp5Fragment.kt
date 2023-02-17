@@ -30,7 +30,6 @@ class ProsOfApp5Fragment : Fragment() {
         binding.previousToProsOfApp4.setOnClickListener {
             findNavController().navigate(R.id.action_prosOfApp5Fragment_to_prosOfApp4Fragment)
         }
-
         binding.skipTextPros5.setOnClickListener {
             findNavController().navigate(R.id.action_prosOfApp5Fragment_to_registerFragment1)
         }
