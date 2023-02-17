@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TeamWork</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_text_uzb">O\'zbek</string>
+    <string name="btn_text_russ">Русский</string>
+    <string name="btn_text_eng">English</string>
+    <string name="online_taxi">Online Taxi</string>
+    <string name="description_pros_of_app1">Enjoy the best ever taxi looking \n experience</string>
+    <string name="next">next</string>
+    <string name="pros_of_app2_text">Cargo Services</string>
+    <string name="desc_pros_of_app_2">We also offer the best and safe cargo \n services for cheap prices</string>
+    <string name="previous">Previous</string>
+    <string name="skip">Skip</string>
+    <string name="text_pros_of_app3">Pay in a way you want</string>
+    <string name="desc_pros3">In our service you can pay by card \n or cash</string>
+    <string name="text_pros4">Multiple orders in one App</string>
+    <string name="desc_pros4">Using our app, you can book several cars \n for various destinations in one time</string>
+    <string name="text_pros5">Several destinations</string>
+    <string name="desc_pros5">Add more than one destination, or even \n book a taxi for person in other place</string>
+    <string name="text_pros_of_app6">Short waiting period</string>
+    <string name="desc_pros6">Do not waste your time for waiting a \n car, the longest period is 5 minutes</string>
+    <string name="text_get_started">Get Started</string>
+    <string name="text_pros7">Customer Support</string>
+    <string name="desc_pros7">Our company also provide you a \n 24/7 customer</string>
+    <string name="login_to_system">Login to system</string>
+</resources>
