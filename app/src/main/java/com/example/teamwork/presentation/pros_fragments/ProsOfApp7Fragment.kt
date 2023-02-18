@@ -25,10 +25,15 @@ class ProsOfApp7Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.nextToRegister.setOnClickListener {
-            findNavController().navigate(R.id.action_prosOfApp7Fragment_to_registerFragment1)
+            findNavController().navigate(R.id.action_prosOfApp7Fragment_to_registerFragment2)
         }
         binding.previousToProsOfApp6.setOnClickListener {
             findNavController().navigate(R.id.action_prosOfApp7Fragment_to_prosOfApp6Fragment)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

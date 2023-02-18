@@ -44,12 +44,15 @@ class ChooseLanguageFragment : Fragment() {
             binding.btnUzbDisable.visibility = View.VISIBLE
             chooseLanguageFragmentToPros()
         }
-
-
     }
 
     private fun chooseLanguageFragmentToPros() {
         findNavController().navigate(R.id.action_chooseLanguageFragment_to_prosOfApp1Fragment)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     companion object {

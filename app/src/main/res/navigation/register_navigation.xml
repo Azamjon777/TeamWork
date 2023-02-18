@@ -26,8 +26,8 @@
             android:id="@+id/action_prosOfApp1Fragment_to_chooseLanguageFragment"
             app:destination="@id/chooseLanguageFragment" />
         <action
-            android:id="@+id/action_prosOfApp1Fragment_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
+            android:id="@+id/action_prosOfApp1Fragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
     </fragment>
     <fragment
         android:id="@+id/prosOfApp2Fragment"
@@ -41,8 +41,8 @@
             android:id="@+id/action_prosOfApp2Fragment_to_prosOfApp1Fragment"
             app:destination="@id/prosOfApp1Fragment" />
         <action
-            android:id="@+id/action_prosOfApp2Fragment_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
+            android:id="@+id/action_prosOfApp2Fragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
     </fragment>
     <fragment
         android:id="@+id/prosOfApp3Fragment"
@@ -56,8 +56,8 @@
             android:id="@+id/action_prosOfApp3Fragment_to_prosOfApp2Fragment"
             app:destination="@id/prosOfApp2Fragment" />
         <action
-            android:id="@+id/action_prosOfApp3Fragment_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
+            android:id="@+id/action_prosOfApp3Fragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
     </fragment>
     <fragment
         android:id="@+id/prosOfApp4Fragment"
@@ -71,8 +71,8 @@
             android:id="@+id/action_prosOfApp4Fragment_to_prosOfApp3Fragment"
             app:destination="@id/prosOfApp3Fragment" />
         <action
-            android:id="@+id/action_prosOfApp4Fragment_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
+            android:id="@+id/action_prosOfApp4Fragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
     </fragment>
     <fragment
         android:id="@+id/prosOfApp5Fragment"
@@ -86,8 +86,8 @@
             android:id="@+id/action_prosOfApp5Fragment_to_prosOfApp4Fragment"
             app:destination="@id/prosOfApp4Fragment" />
         <action
-            android:id="@+id/action_prosOfApp5Fragment_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
+            android:id="@+id/action_prosOfApp5Fragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
     </fragment>
     <fragment
         android:id="@+id/prosOfApp6Fragment"
@@ -100,8 +100,8 @@
             android:id="@+id/action_prosOfApp6Fragment_to_prosOfApp5Fragment"
             app:destination="@id/prosOfApp5Fragment" />
         <action
-            android:id="@+id/action_prosOfApp6Fragment_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
+            android:id="@+id/action_prosOfApp6Fragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
     </fragment>
     <fragment
         android:id="@+id/prosOfApp7Fragment"
@@ -111,16 +111,7 @@
             android:id="@+id/action_prosOfApp7Fragment_to_prosOfApp6Fragment"
             app:destination="@id/prosOfApp6Fragment" />
         <action
-            android:id="@+id/action_prosOfApp7Fragment_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
-    </fragment>
-    <fragment
-        android:id="@+id/registerFragment1"
-        android:name="com.example.teamwork.presentation.register_fragments.RegisterFragment1"
-        android:label="fragment_register1"
-        tools:layout="@layout/fragment_register1" >
-        <action
-            android:id="@+id/action_registerFragment1_to_registerFragment2"
+            android:id="@+id/action_prosOfApp7Fragment_to_registerFragment2"
             app:destination="@id/registerFragment2" />
     </fragment>
     <fragment
@@ -130,9 +121,6 @@
         <action
             android:id="@+id/action_registerFragment2_to_registerFragment3"
             app:destination="@id/registerFragment3" />
-        <action
-            android:id="@+id/action_registerFragment2_to_registerFragment1"
-            app:destination="@id/registerFragment1" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment3"

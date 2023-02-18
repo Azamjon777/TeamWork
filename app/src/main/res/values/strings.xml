@@ -39,4 +39,8 @@
     <string name="several_destinations">Several destinations</string>
     <string name="customer_support">Customer Support</string>
     <string name="pros_of_app1_text">Online Taxi</string>
+    <string name="_998">+998</string>
+    <string name="sms_orqali_qabul_qilingan_kodni_kiriting">SMS orqali qabul qilingan kodni kiriting</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
 </resources>

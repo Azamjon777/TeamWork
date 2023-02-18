@@ -33,7 +33,12 @@ class ProsOfApp2Fragment : Fragment() {
             findNavController().navigate(R.id.action_prosOfApp2Fragment_to_prosOfApp1Fragment)
         }
         binding.skipTextPros2.setOnClickListener {
-            findNavController().navigate(R.id.action_prosOfApp2Fragment_to_registerFragment1)
+            findNavController().navigate(R.id.action_prosOfApp2Fragment_to_registerFragment2)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
