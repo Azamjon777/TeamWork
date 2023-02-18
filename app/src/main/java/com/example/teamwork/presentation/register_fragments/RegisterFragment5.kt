@@ -1,16 +1,15 @@
 package com.example.teamwork.presentation.register_fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.teamwork.R
 import com.example.teamwork.databinding.FragmentRegister5Binding
-import com.example.teamwork.presentation.Login1Activity
 import com.example.teamwork.presentation.MyViewModel
-import com.example.teamwork.presentation.ProsActivity
 
 class RegisterFragment5 : Fragment() {
     private var _binding: FragmentRegister5Binding? = null
@@ -39,7 +38,7 @@ class RegisterFragment5 : Fragment() {
             val textPassword = binding.etPassword.text.toString()
             val textConfirmPassword = binding.etConfirmPassword.text.toString()
             viewModel.validatePassword(textPassword, textConfirmPassword)
-
+            findNavController().navigate(R.id.action_registerFragment5_to_taxiInfoMainFragment)
         }
     }
 

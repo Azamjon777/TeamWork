@@ -59,7 +59,7 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
     fun validateInputPhone(name: String): Boolean {
         parseText(name)
         var result = true
-        if (name.isBlank() || name.length < 9) {
+        if (name.length < 9) {
             _errorInputPhoneNumber.value = true
             result = false
         }

@@ -10,4 +10,5 @@
     <color name="gray_light">#BDBDBD</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#24A33B</color>
+    <color name="gray_for_cardview">#F4F7F9</color>
 </resources>

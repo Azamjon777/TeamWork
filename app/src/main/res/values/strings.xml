@@ -43,4 +43,12 @@
     <string name="sms_orqali_qabul_qilingan_kodni_kiriting">SMS orqali qabul qilingan kodni kiriting</string>
     <string name="password">Password</string>
     <string name="enter_password">Enter password</string>
+    <string name="muhammad_mamasoliyev">Muhammad Mamasoliyev</string>
+    <string name="faol_holatda">Faol holatda</string>
+    <string name="_200_000">200 000</string>
+    <string name="balans">Balans</string>
+    <string name="_89">89</string>
+    <string name="bonus">Bonus</string>
+    <string name="shaharlararo_taksi_rejimi">Shaharlararo taksi rejimi</string>
+    <string name="liniyaga_chiqish">Liniyaga chiqish</string>
 </resources>

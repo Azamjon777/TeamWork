@@ -151,5 +151,12 @@
         <action
             android:id="@+id/action_registerFragment5_to_registerFragment4"
             app:destination="@id/registerFragment4" />
+        <action
+            android:id="@+id/action_registerFragment5_to_taxiInfoMainFragment"
+            app:destination="@id/taxiInfoMainFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/taxiInfoMainFragment"
+        android:name="com.example.teamwork.presentation.taxi_info_main.TaxiInfoMainFragment"
+        android:label="TaxiInfoMainFragment" />
 </navigation>

@@ -6,11 +6,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-
-//запросы в интернете это endPoints
 interface RestCountriesService {
     /*Внизу endPoint(запрос) чтобы получить города по имени. То есть внизу функция для получения
-    города по его миени*/
+    города по его миени(ЭТО ДЛЯ СЕБЯ)*/
     @GET("name/{cca2}")
     suspend fun getCountryByName(@Path("cca2") cityName: String): List<Country>
 }
