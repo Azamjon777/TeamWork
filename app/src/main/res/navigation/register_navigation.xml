@@ -170,7 +170,6 @@
         android:label="RegisterFragment5">
         <action
             android:id="@+id/action_registerFragment5_to_registerFragment4"
-            app:destination="@id/registerFragment4"
-            app:popUpToInclusive="false" />
+            app:destination="@id/registerFragment4" />
     </fragment>
 </navigation>
