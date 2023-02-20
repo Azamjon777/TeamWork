@@ -45,8 +45,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
             android:maxLength="5"
+            app:boxStrokeColor="@color/green"
             app:counterEnabled="true"
             app:counterMaxLength="5"
+            app:hintTextColor="@color/green"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_enter_email_password">
@@ -80,7 +82,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="24dp"
-            android:backgroundTint="@color/gray_light"
+            android:backgroundTint="@color/gray_for_cardview"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_next_reg3">
@@ -95,7 +98,6 @@
                 android:textStyle="bold"
                 tools:text="@string/_00_00" />
         </androidx.cardview.widget.CardView>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

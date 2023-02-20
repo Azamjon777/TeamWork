@@ -91,6 +91,7 @@
             app:layout_constraintTop_toBottomOf="@id/card_name">
 
             <TextView
+                android:id="@+id/text_balans"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -120,6 +121,7 @@
             app:layout_constraintTop_toBottomOf="@id/card_name">
 
             <TextView
+                android:id="@+id/text_bonus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -167,6 +169,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/icon_next_cities"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_gravity="end|center_vertical"
@@ -175,6 +178,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/go_to_line_popup"
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_marginTop="22dp"
@@ -202,6 +206,18 @@
                 android:textSize="18sp" />
 
         </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:itemBackground="@color/bottom_color"
+            app:itemIconTint="@color/green"
+            app:itemTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/nav_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -14,10 +14,13 @@
         android:theme="@style/Theme.TeamWork"
         tools:targetApi="31">
         <activity
+            android:name=".TaxiInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".TaxiInfoMainActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.Login1Activity"
+            android:name=".presentation.TaxiActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.ProsActivity"

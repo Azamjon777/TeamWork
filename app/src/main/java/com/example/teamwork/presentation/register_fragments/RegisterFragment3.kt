@@ -1,6 +1,8 @@
 package com.example.teamwork.presentation.register_fragments
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,13 +39,34 @@ class RegisterFragment3 : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
 
         viewModel.startTimer()
+        addTextChangeListeners()
 
         binding.btnNextReg3.setOnClickListener {
-            val code = binding.etCode.text.toString()
-            if (viewModel.validateCode(code)) {
+            if (viewModel.validCode.value == true) {
                 findNavController().navigate(R.id.action_registerFragment3_to_registerFragment4)
             }
         }
+
+        binding.cardViewTimer.setOnClickListener {
+            viewModel.startTimer()
+        }
+    }
+
+    //этот код не заработал у меня
+    private fun changeCardColor() {
+        val color = viewModel.cardCanBeGreen.value
+        color?.let { binding.cardViewTimer.setBackgroundResource(it) }
+    }
+
+    private fun addTextChangeListeners() {
+        binding.etCode.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                viewModel.validateCode(binding.etCode.text.toString())
+            }
+
+            override fun afterTextChanged(s: Editable?) {}
+        })
     }
 
     override fun onDestroyView() {

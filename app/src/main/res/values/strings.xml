@@ -51,4 +51,12 @@
     <string name="bonus">Bonus</string>
     <string name="shaharlararo_taksi_rejimi">Shaharlararo taksi rejimi</string>
     <string name="liniyaga_chiqish">Liniyaga chiqish</string>
+    <string name="new_code">Send new code</string>
+    <string name="send_new_code">Send new code</string>
+    <string name="toliq_nomer">To\'liq nomer*</string>
+    <string name="tashkent">Tashkent</string>
+    <string name="fergana">Fergana</string>
+    <string name="asosiy">Asosiy</string>
+    <string name="buyurtmalar">Buyurtmalar</string>
+    <string name="profil">Profil</string>
 </resources>

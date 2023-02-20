@@ -9,6 +9,8 @@
     <color name="gray">#717171</color>
     <color name="gray_light">#BDBDBD</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bottom_color">#111C20</color>
     <color name="green">#24A33B</color>
     <color name="gray_for_cardview">#F4F7F9</color>
+    <color name="red">#CD1919</color>
 </resources>

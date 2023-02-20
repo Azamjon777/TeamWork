@@ -9,7 +9,7 @@
         android:id="@+id/chooseLanguageFragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ChooseLanguageFragment"
         android:label="fragment_choose_language"
-        tools:layout="@layout/fragment_choose_language" >
+        tools:layout="@layout/fragment_choose_language">
         <action
             android:id="@+id/action_chooseLanguageFragment_to_prosOfApp1Fragment"
             app:destination="@id/prosOfApp1Fragment" />
@@ -18,7 +18,7 @@
         android:id="@+id/prosOfApp1Fragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ProsOfApp1Fragment"
         android:label="fragment_pros_of_app1"
-        tools:layout="@layout/fragment_pros_of_app1" >
+        tools:layout="@layout/fragment_pros_of_app1">
         <action
             android:id="@+id/action_prosOfApp1Fragment_to_prosOfApp2Fragment"
             app:destination="@id/prosOfApp2Fragment" />
@@ -33,7 +33,7 @@
         android:id="@+id/prosOfApp2Fragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ProsOfApp2Fragment"
         android:label="fragment_pros_of_app2"
-        tools:layout="@layout/fragment_pros_of_app2" >
+        tools:layout="@layout/fragment_pros_of_app2">
         <action
             android:id="@+id/action_prosOfApp2Fragment_to_prosOfApp3Fragment"
             app:destination="@id/prosOfApp3Fragment" />
@@ -48,7 +48,7 @@
         android:id="@+id/prosOfApp3Fragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ProsOfApp3Fragment"
         android:label="fragment_pros_of_app3"
-        tools:layout="@layout/fragment_pros_of_app3" >
+        tools:layout="@layout/fragment_pros_of_app3">
         <action
             android:id="@+id/action_prosOfApp3Fragment_to_prosOfApp4Fragment"
             app:destination="@id/prosOfApp4Fragment" />
@@ -63,7 +63,7 @@
         android:id="@+id/prosOfApp4Fragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ProsOfApp4Fragment"
         android:label="fragment_pros_of_app4"
-        tools:layout="@layout/fragment_pros_of_app4" >
+        tools:layout="@layout/fragment_pros_of_app4">
         <action
             android:id="@+id/action_prosOfApp4Fragment_to_prosOfApp5Fragment"
             app:destination="@id/prosOfApp5Fragment" />
@@ -78,7 +78,7 @@
         android:id="@+id/prosOfApp5Fragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ProsOfApp5Fragment"
         android:label="fragment_pros_of_app7"
-        tools:layout="@layout/fragment_pros_of_app7" >
+        tools:layout="@layout/fragment_pros_of_app7">
         <action
             android:id="@+id/action_prosOfApp5Fragment_to_prosOfApp6Fragment"
             app:destination="@id/prosOfApp6Fragment" />
@@ -92,7 +92,7 @@
     <fragment
         android:id="@+id/prosOfApp6Fragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ProsOfApp6Fragment"
-        android:label="ProsOfApp6Fragment" >
+        android:label="ProsOfApp6Fragment">
         <action
             android:id="@+id/action_prosOfApp6Fragment_to_prosOfApp7Fragment"
             app:destination="@id/prosOfApp7Fragment" />
@@ -106,7 +106,7 @@
     <fragment
         android:id="@+id/prosOfApp7Fragment"
         android:name="com.example.teamwork.presentation.pros_fragments.ProsOfApp7Fragment"
-        android:label="ProsOfApp7Fragment" >
+        android:label="ProsOfApp7Fragment">
         <action
             android:id="@+id/action_prosOfApp7Fragment_to_prosOfApp6Fragment"
             app:destination="@id/prosOfApp6Fragment" />
@@ -117,7 +117,7 @@
     <fragment
         android:id="@+id/registerFragment2"
         android:name="com.example.teamwork.presentation.register_fragments.RegisterFragment2"
-        android:label="RegisterFragment2" >
+        android:label="RegisterFragment2">
         <action
             android:id="@+id/action_registerFragment2_to_registerFragment3"
             app:destination="@id/registerFragment3" />
@@ -125,7 +125,7 @@
     <fragment
         android:id="@+id/registerFragment3"
         android:name="com.example.teamwork.presentation.register_fragments.RegisterFragment3"
-        android:label="RegisterFragment3" >
+        android:label="RegisterFragment3">
         <action
             android:id="@+id/action_registerFragment3_to_registerFragment4"
             app:destination="@id/registerFragment4" />
@@ -136,7 +136,7 @@
     <fragment
         android:id="@+id/registerFragment4"
         android:name="com.example.teamwork.presentation.register_fragments.RegisterFragment4"
-        android:label="RegisterFragment4" >
+        android:label="RegisterFragment4">
         <action
             android:id="@+id/action_registerFragment4_to_registerFragment5"
             app:destination="@id/registerFragment5" />
@@ -147,16 +147,9 @@
     <fragment
         android:id="@+id/registerFragment5"
         android:name="com.example.teamwork.presentation.register_fragments.RegisterFragment5"
-        android:label="RegisterFragment5" >
+        android:label="RegisterFragment5">
         <action
             android:id="@+id/action_registerFragment5_to_registerFragment4"
             app:destination="@id/registerFragment4" />
-        <action
-            android:id="@+id/action_registerFragment5_to_taxiInfoMainFragment"
-            app:destination="@id/taxiInfoMainFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/taxiInfoMainFragment"
-        android:name="com.example.teamwork.presentation.taxi_info_main.TaxiInfoMainFragment"
-        android:label="TaxiInfoMainFragment" />
 </navigation>

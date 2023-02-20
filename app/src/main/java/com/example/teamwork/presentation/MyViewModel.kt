@@ -2,10 +2,12 @@ package com.example.teamwork.presentation
 
 import android.app.Application
 import android.os.CountDownTimer
-import android.widget.Toast
+import android.view.View
+import androidx.cardview.widget.CardView
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.teamwork.R
 
 class MyViewModel(private val application: Application) : AndroidViewModel(application) {
     private var timer: CountDownTimer? = null
@@ -14,17 +16,28 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
     val formattedTime: LiveData<String>
         get() = _formattedTime
 
+    private var _cardCanBeGreen = MutableLiveData<Int>()
+    val cardCanBeGreen: LiveData<Int>
+        get() = _cardCanBeGreen
+
     private val _errorInputPhoneNumber = MutableLiveData<Boolean>()
+    val errorInputPhoneNumber: LiveData<Boolean>
+        get() = _errorInputPhoneNumber
+
+    private val _validCode = MutableLiveData<Boolean>()
+    val validCode: LiveData<Boolean>
+        get() = _validCode
 
     fun startTimer() {
-        timer = object : CountDownTimer(60 * MILLIS_IN_SECONDS, MILLIS_IN_SECONDS) {
+        timer = object : CountDownTimer(5 * MILLIS_IN_SECONDS, MILLIS_IN_SECONDS) {
             override fun onTick(millisUntilFinished: Long) {
                 //В _formattedTime хранится уже преобразованный String типа '00:00'
                 _formattedTime.value = formatTime(millisUntilFinished)
             }
 
             override fun onFinish() {
-                Toast.makeText(application, "1 minute finish", Toast.LENGTH_SHORT).show()
+                _cardCanBeGreen.value = application.getColor(R.color.green)
+                _formattedTime.value = application.getString(R.string.send_new_code)
             }
         }
         timer?.start()
@@ -41,9 +54,9 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
     fun validatePassword(password: String, confirmPassword: String): Boolean {
         val parseName1 = parseText(password)
         val parseName2 = parseText(confirmPassword)
-        val isEmptyPassword = parseName1.isEmpty() || parseName2.isEmpty()
+        val isEmptyPassword = parseName1.isNotEmpty() && parseName2.isNotEmpty()
         val isSamePassword = password == confirmPassword
-        return !isEmptyPassword && !isSamePassword
+        return isEmptyPassword && isSamePassword
     }
 
     fun validateNameSurname(firstName: String, secondName: String): Boolean {
@@ -52,8 +65,8 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
         return parseName1.isNotEmpty() || parseName2.isNotEmpty()
     }
 
-    fun validateCode(codeText: String): Boolean {
-        return codeText.length == 5
+    fun validateCode(codeText: String) {
+        _validCode.value = codeText.length == 5
     }
 
     fun validateInputPhone(name: String): Boolean {
@@ -77,6 +90,11 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
 
     fun resetErrorInputName() {
         _errorInputPhoneNumber.value = false
+    }
+
+    fun afterSendNewMessage(cardTimer: CardView, cardNewCode: CardView) {
+        cardTimer.visibility = View.GONE
+        cardNewCode.visibility = View.VISIBLE
     }
 
     companion object {
