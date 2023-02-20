@@ -80,7 +80,7 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
     }
 
     private fun parseText(inputName: String?): String {
-        return inputName?.trim() ?: ""
+        return inputName?.trim() ?: " "  //TODO
     }
 
     override fun onCleared() {

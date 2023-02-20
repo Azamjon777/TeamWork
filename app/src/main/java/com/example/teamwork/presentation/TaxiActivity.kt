@@ -1,10 +1,8 @@
 package com.example.teamwork.presentation
 
 import android.os.Bundle
-import android.widget.PopupMenu
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.teamwork.R
+import com.example.teamwork.presentation.taxi_info_fragments.DialogOrderDetailsFragment
 import com.example.teamwork.databinding.ActivityTaxiBinding
 
 class TaxiActivity : AppCompatActivity() {
@@ -16,14 +14,9 @@ class TaxiActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        binding.goToLinePopup.setOnClickListener { it ->
-            val popup = PopupMenu(this, it)
-            popup.inflate(R.menu.test)
-            popup.setOnMenuItemClickListener {
-                Toast.makeText(this, "it $it", Toast.LENGTH_SHORT).show()
-                true
-            }
-            popup.show()
+        binding.goToLinePopup.setOnClickListener {
+            val dialogFragment = DialogOrderDetailsFragment()
+            dialogFragment.show(supportFragmentManager, "CustomDialog")
         }
     }
 }

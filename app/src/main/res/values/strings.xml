@@ -59,4 +59,8 @@
     <string name="asosiy">Asosiy</string>
     <string name="buyurtmalar">Buyurtmalar</string>
     <string name="profil">Profil</string>
+    <string name="yo_nalishni_tanlang">Yo\'nalishni tanlang</string>
+    <string name="farg_ona">Farg\'ona</string>
+    <string name="toshkent">Toshkent</string>
+    <string name="vaqt_oralig_ini_tanlang">Vaqt oralig\'ini tanlang</string>
 </resources>

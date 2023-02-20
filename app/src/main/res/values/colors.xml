@@ -13,4 +13,6 @@
     <color name="green">#24A33B</color>
     <color name="gray_for_cardview">#F4F7F9</color>
     <color name="red">#CD1919</color>
+    <color name="orange">#FCC300</color>
+    <color name="ic_down">#D9D9D9</color>
 </resources>

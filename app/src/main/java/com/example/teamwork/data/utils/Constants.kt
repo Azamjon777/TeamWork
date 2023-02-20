@@ -1,4 +1,4 @@
-package com.example.teamwork.utils
+package com.example.teamwork.data.utils
 
 class Constants {
     companion object {

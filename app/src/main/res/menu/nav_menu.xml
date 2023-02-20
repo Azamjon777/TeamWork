@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/ic_home"
-        android:icon="@drawable/ic_home"
-        android:title="@string/asosiy" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/asosiy" />
 
-    <item
-        android:id="@+id/ic_balans"
-        android:icon="@drawable/ic_balance"
-        android:title="@string/balans" />
+        <item
+            android:id="@+id/ic_balans"
+            android:icon="@drawable/ic_balance"
+            android:title="@string/balans" />
 
-    <item
-        android:id="@+id/ic_buyurtmalar"
-        android:icon="@drawable/ic_buyurtmalar"
-        android:title="@string/buyurtmalar" />
+        <item
+            android:id="@+id/ic_buyurtmalar"
+            android:icon="@drawable/ic_buyurtmalar"
+            android:title="@string/buyurtmalar" />
 
-    <item
-        android:id="@+id/ic_profile"
-        android:icon="@drawable/ic_profile"
-        android:title="@string/profil" />
+        <item
+            android:id="@+id/ic_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profil" />
+    </group>
+
 </menu>
