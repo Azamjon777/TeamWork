@@ -54,9 +54,9 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
     fun validatePassword(password: String, confirmPassword: String): Boolean {
         val parseName1 = parseText(password)
         val parseName2 = parseText(confirmPassword)
-        val isEmptyPassword = parseName1.isNotEmpty() && parseName2.isNotEmpty()
-        val isSamePassword = password == confirmPassword
-        return isEmptyPassword && isSamePassword
+        val isEmptyPassword = (parseName1.isNotEmpty() && parseName2.isNotEmpty())
+        val isSamePassword: Boolean = password == confirmPassword
+        return (isEmptyPassword && isSamePassword)
     }
 
     fun validateNameSurname(firstName: String, secondName: String): Boolean {

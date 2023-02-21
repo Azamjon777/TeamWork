@@ -41,6 +41,7 @@ class RegisterFragment5 : Fragment() {
             if (viewModel.validatePassword(textPassword, textConfirmPassword)) {
                 val intent = Intent(activity, TaxiActivity::class.java)
                 startActivity(intent)
+                activity?.finish()
             } else {
                 Toast.makeText(activity, "error password", Toast.LENGTH_SHORT).show()
             }

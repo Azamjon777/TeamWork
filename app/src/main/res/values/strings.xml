@@ -63,4 +63,24 @@
     <string name="farg_ona">Farg\'ona</string>
     <string name="toshkent">Toshkent</string>
     <string name="vaqt_oralig_ini_tanlang">Vaqt oralig\'ini tanlang</string>
+    <string name="_1_7">1/7</string>
+    <string name="_2_7">2/7</string>
+    <string name="_3_7">3/7</string>
+    <string name="_4_7">4/7</string>
+    <string name="_5_7">5/7</string>
+    <string name="_6_7">6/7</string>
+    <string name="_7_7">7/7</string>
+    <string name="yo_nalishda">Yo\'nalishda</string>
+    <string name="yo_lovchilar">Yo\'lovchilar</string>
+    <string name="bo_sh">Bo\'sh</string>
+    <string name="_1">#1</string>
+    <string name="uch_nuqta">...</string>
+    <string name="_2">#2</string>
+    <string name="_3">#3</string>
+    <string name="_4">#4</string>
+    <string name="tepa_bagaj">Tepa bagaj</string>
+    <string name="mavjud_pochtalar">Mavjud pochtalar</string>
+    <string name="yo_q">Yo\'q</string>
+    <string name="yo_nalishdan_chiqish">Yo\'nalishdan chiqish</string>
+    <string name="yo_lga_chiqish">Yo\'lga chiqish</string>
 </resources>

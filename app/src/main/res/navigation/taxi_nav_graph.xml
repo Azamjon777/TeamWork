@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/taxi_nav_graph"
+    app:startDestination="@id/dialogOrderDetailsFragment2">
+
+    <dialog
+        android:id="@+id/dialogOrderDetailsFragment2"
+        android:name="com.example.teamwork.presentation.taxi_info_fragments.DialogOrderDetailsFragment"
+        android:label="fragment_dialog_order_details"
+        tools:layout="@layout/fragment_dialog_order_details">
+        <action
+            android:id="@+id/action_dialogOrderDetailsFragment2_to_goToLineFragment2"
+            app:destination="@id/goToLineFragment2" />
+    </dialog>
+    <fragment
+        android:id="@+id/goToLineFragment2"
+        android:name="com.example.teamwork.presentation.taxi_info_fragments.GoToLineFragment"
+        android:label="GoToLineFragment" />
+</navigation>

@@ -14,10 +14,7 @@
         android:theme="@style/Theme.TeamWork"
         tools:targetApi="31">
         <activity
-            android:name=".TaxiInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TaxiInfoMainActivity"
+            android:name=".presentation.TaxiContainerActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.TaxiActivity"

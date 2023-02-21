@@ -176,7 +176,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btn_order_go_to_line"
+        android:id="@+id/btn_go_to_line"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
