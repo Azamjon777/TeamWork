@@ -83,11 +83,6 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
         return inputName?.trim() ?: " "  //TODO
     }
 
-    override fun onCleared() {
-        super.onCleared()
-        timer?.cancel()
-    }
-
     fun resetErrorInputName() {
         _errorInputPhoneNumber.value = false
     }
@@ -95,6 +90,12 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
     fun afterSendNewMessage(cardTimer: CardView, cardNewCode: CardView) {
         cardTimer.visibility = View.GONE
         cardNewCode.visibility = View.VISIBLE
+    }
+
+    override fun onCleared() {
+        //когда мы уходим из фрагменты необходимо чтобы timer() отменялся в методе onCleared()
+        super.onCleared()
+        timer?.cancel()
     }
 
     companion object {

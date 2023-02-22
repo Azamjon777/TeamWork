@@ -41,6 +41,8 @@ class RegisterFragment2 : Fragment() {
             val phone = binding.etPhoneNumber.text.toString()
             if (viewModel.validateInputPhone(phone)) {
                 findNavController().navigate(R.id.action_registerFragment2_to_registerFragment3)
+            } else {
+                binding.tilPhoneNumber.error = "To'liq notog'ri kiritilmagan"
             }
         }
     }

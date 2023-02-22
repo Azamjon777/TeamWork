@@ -48,7 +48,6 @@
             app:counterEnabled="true"
             app:counterMaxLength="9"
             app:errorEnabled="true"
-            app:helperText="@string/toliq_nomer"
             app:helperTextTextColor="@color/red"
             app:hintTextColor="@color/green"
             app:layout_constraintEnd_toEndOf="parent"
