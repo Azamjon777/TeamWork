@@ -12,6 +12,8 @@ import com.example.teamwork.R
 class MyViewModel(private val application: Application) : AndroidViewModel(application) {
     private var timer: CountDownTimer? = null
 
+    var colorOfCircle = MutableLiveData<Int>()
+
     private val _formattedTime = MutableLiveData<String>()
     val formattedTime: LiveData<String>
         get() = _formattedTime
@@ -59,10 +61,9 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
         return (isEmptyPassword && isSamePassword)
     }
 
-    fun validateNameSurname(firstName: String, secondName: String): Boolean {
+    fun validateName(firstName: String): Boolean {
         val parseName1 = parseText(firstName)
-        val parseName2 = parseText(secondName)
-        return parseName1.isNotEmpty() || parseName2.isNotEmpty()
+        return parseName1.isNotEmpty()
     }
 
     fun validateCode(codeText: String) {

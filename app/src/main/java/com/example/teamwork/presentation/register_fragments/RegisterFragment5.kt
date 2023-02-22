@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.teamwork.databinding.FragmentRegister5Binding
@@ -43,7 +42,8 @@ class RegisterFragment5 : Fragment() {
                 startActivity(intent)
                 activity?.finish()
             } else {
-                Toast.makeText(activity, "error password", Toast.LENGTH_SHORT).show()
+                binding.tilPassword.error = "Parollar bir xil emas"
+                binding.tilConfirmPassword.error = "Parollar bir xil emas"
             }
         }
     }

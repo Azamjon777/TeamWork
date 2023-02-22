@@ -35,6 +35,7 @@ class DialogOrderDetailsFragment() : DialogFragment() {
             val btnCheckBox = view.findViewById<RadioButton>(selectBtn)//логика для отправки данных
             if (btnCheckBox != null) {
                 startActivity(Intent(activity, TaxiContainerActivity::class.java))
+                dismiss()
             } else {
                 Toast.makeText(activity, "Yo'nalish tanlang", Toast.LENGTH_SHORT).show()
             }

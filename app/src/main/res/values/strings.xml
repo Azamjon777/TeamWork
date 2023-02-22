@@ -83,4 +83,19 @@
     <string name="yo_q">Yo\'q</string>
     <string name="yo_nalishdan_chiqish">Yo\'nalishdan chiqish</string>
     <string name="yo_lga_chiqish">Yo\'lga chiqish</string>
+    <string name="yo_nalishdan_chiqasizmi">Yo\'nalishdan chiqasizmi?</string>
+    <string name="yo_nalishdan_chiqish_uchun_n_biz_bilan_bog_laning">Yo’nalishdan chiqish uchun \n biz bilan bog’laning</string>
+    <string name="operator">Operator</string>
+    <string name="_998_90_780_06_60">+998 90 780 06 60</string>
+    <string name="onlinetaxi_call_center">"@"onlinetaxi_call_center</string>
+    <string name="orqaga_qaytish">Orqaga qaytish</string>
+    <string name="zakazlar">Zakazlar</string>
+    <string name="yo_lovchini_qo_shish">Yo\'lovchini qo\'shish</string>
+    <string name="joy">Joy</string>
+    <string name="narxi">Narxi</string>
+    <string name="_120000_so_m">120000 so\'m</string>
+    <string name="bekor_qilish">Bekor qilish</string>
+    <string name="olib_tashlash">Olib tashlash</string>
+    <string name="telefon_raqam">Telefon raqam</string>
+    <string name="qo_shish">Qo\'shish</string>
 </resources>

@@ -5,12 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.teamwork.R
-import com.example.teamwork.data.api.restCountriesApi
 import com.example.teamwork.databinding.FragmentProsOfApp1Binding
-import kotlinx.coroutines.launch
 
 class ProsOfApp1Fragment : Fragment() {
     private var _binding: FragmentProsOfApp1Binding? = null

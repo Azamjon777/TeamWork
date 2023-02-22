@@ -39,8 +39,14 @@ class RegisterFragment4 : Fragment() {
             val name = binding.etFirstName.text.toString()
             val secondName = binding.etSecondName.text.toString()
 
-            if (viewModel.validateNameSurname(name, secondName)) {
-                findNavController().navigate(R.id.action_registerFragment4_to_registerFragment5)
+            if (viewModel.validateName(name)) {
+                if (viewModel.validateName(secondName)) {
+                    findNavController().navigate(R.id.action_registerFragment4_to_registerFragment5)
+                } else {
+                    binding.tilFirstName.error = "Ism kiriting"
+                }
+            } else {
+                binding.tilSecondName.error = "Ism kiriting"
             }
         }
     }

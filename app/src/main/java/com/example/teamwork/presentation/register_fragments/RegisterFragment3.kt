@@ -44,6 +44,8 @@ class RegisterFragment3 : Fragment() {
         binding.btnNextReg3.setOnClickListener {
             if (viewModel.validCode.value == true) {
                 findNavController().navigate(R.id.action_registerFragment3_to_registerFragment4)
+            }else{
+                binding.tilCode.error = "Xato kod"
             }
         }
 

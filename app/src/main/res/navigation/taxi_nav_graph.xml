@@ -8,5 +8,13 @@
     <fragment
         android:id="@+id/goToLineFragment2"
         android:name="com.example.teamwork.presentation.taxi_info_fragments.GoToLineFragment"
-        android:label="GoToLineFragment" />
+        android:label="GoToLineFragment" >
+        <action
+            android:id="@+id/action_goToLineFragment2_to_zakazlarFragment"
+            app:destination="@id/zakazlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zakazlarFragment"
+        android:name="com.example.teamwork.presentation.taxi_info_fragments.ZakazlarFragment"
+        android:label="ZakazlarFragment" />
 </navigation>
