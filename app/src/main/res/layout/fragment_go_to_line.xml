@@ -3,6 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.teamwork.presentation.MyViewModel" />
+    </data>
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -112,10 +120,11 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="25dp"
                         android:src="@drawable/ic_circle_add_green"
+                        android:visibility="visible"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <!--<de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/circle_img_in_card1_yellow"
                         android:layout_width="22dp"
                         android:layout_height="22dp"
@@ -124,14 +133,15 @@
                         android:src="@drawable/ic_circle_add_yellow"
                         android:visibility="gone"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />
+                        app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />-->
 
                     <TextView
+                        android:id="@+id/text_can_be_changed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="21dp"
                         android:layout_marginTop="10dp"
-                        android:text="@string/bo_sh"
+                        android:text="@{viewModel.textBoshOrBand.toString()}"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         tools:ignore="SmallSp" />
@@ -410,11 +420,12 @@
             app:layout_constraintStart_toStartOf="@id/yolovchilar"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip1"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end" />
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -443,11 +454,12 @@
             app:layout_constraintStart_toStartOf="@id/card_tepa_bagaj"
             app:layout_constraintTop_toBottomOf="@id/card_tepa_bagaj">
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip2"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end" />
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -12,7 +12,10 @@ import com.example.teamwork.R
 class MyViewModel(private val application: Application) : AndroidViewModel(application) {
     private var timer: CountDownTimer? = null
 
-    var colorOfCircle = MutableLiveData<Int>()
+    var textBoshOrBand = MutableLiveData<String>()
+    init {
+        textBoshOrBand.value = "Bo'sh"
+    }
 
     private val _formattedTime = MutableLiveData<String>()
     val formattedTime: LiveData<String>
@@ -38,7 +41,8 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
             }
 
             override fun onFinish() {
-                _cardCanBeGreen.value = application.getColor(R.color.green)
+                _cardCanBeGreen.value =
+                    application.getColor(R.color.green)//здесь пока не могу задать цвет
                 _formattedTime.value = application.getString(R.string.send_new_code)
             }
         }
@@ -98,6 +102,18 @@ class MyViewModel(private val application: Application) : AndroidViewModel(appli
         super.onCleared()
         timer?.cancel()
     }
+
+//    fun changeTextToBand() {
+//        if (textBoshOrBand.value == "Bo'sh") {
+//            textBoshOrBand.value = "Band"
+//        }
+//    }
+//
+//    fun changeTextToBosh() {
+//        if (textBoshOrBand.value == "Band") {
+//            textBoshOrBand.value = "Bo'sh"
+//        }
+//    }
 
     companion object {
         private const val MILLIS_IN_SECONDS = 1000L

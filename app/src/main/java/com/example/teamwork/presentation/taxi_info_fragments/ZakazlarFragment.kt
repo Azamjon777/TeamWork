@@ -4,7 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.teamwork.R
 import com.example.teamwork.databinding.FragmentZakazlarBinding
 
 class ZakazlarFragment : Fragment() {
@@ -25,5 +28,9 @@ class ZakazlarFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val exit = view.findViewById<ImageView>(R.id.img_back_zakaz)
+        exit.setOnClickListener {
+            findNavController().navigate(R.id.action_zakazlarFragment_to_goToLineFragment2)
+        }
     }
 }

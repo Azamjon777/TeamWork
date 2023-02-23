@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.teamwork.R
@@ -37,23 +36,8 @@ class GoToLineFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        viewModel.colorOfCircle.observe(requireActivity(), Observer {
-            if (it == green) {
-                val circleImgGreen = binding.circleImgInCard1Green
-                circleImgGreen.visibility = View.VISIBLE
-                val circleImgYellow = binding.circleImgInCard1Yellow
-                circleImgYellow.visibility = View.GONE
-            } else if (it == yellow) {
-                val circleImgGreen = binding.circleImgInCard1Green
-                circleImgGreen.visibility = View.GONE
-
-                val circleImgYellow = binding.circleImgInCard1Yellow
-                circleImgYellow.visibility = View.VISIBLE
-            }
-        })
-
-        viewModel.colorOfCircle.value = green
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
 
         binding.imgBack.setOnClickListener {
             activity?.finish()
@@ -69,22 +53,13 @@ class GoToLineFragment : Fragment() {
         }
 
         binding.firstCardBosh.setOnClickListener {
-            if (viewModel.colorOfCircle.value == yellow) {
+            if (viewModel.textBoshOrBand.value == "Band") {
                 val dialogFragment = YolovchiMalumotiDialogFragment()
                 dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
-            } else if (viewModel.colorOfCircle.value == green) {
+            } else if (viewModel.textBoshOrBand.value == "Bo'sh") {
                 val dialogFragment = YolovchiQoshishDialogFragment()
                 dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
             }
-        }
-    }
-
-    private fun validColor() {
-        if (viewModel.colorOfCircle.value == green) {
-
-
-        } else if (viewModel.colorOfCircle.value == yellow) {
-
         }
     }
 }
