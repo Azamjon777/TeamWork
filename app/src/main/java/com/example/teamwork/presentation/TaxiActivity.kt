@@ -22,7 +22,6 @@ class TaxiActivity : AppCompatActivity() {
         }
     }
 
-    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             return super.onBackPressed()
