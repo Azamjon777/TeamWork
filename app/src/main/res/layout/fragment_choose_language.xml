@@ -15,7 +15,7 @@
             android:layout_height="170dp"
             android:layout_gravity="center"
             android:layout_marginBottom="24dp"
-            android:src="@drawable/hours" />
+            android:src="@drawable/logo_taxi" />
 
         <Button
             android:id="@+id/btn_uzb_disable"
