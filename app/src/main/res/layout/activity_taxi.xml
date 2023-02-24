@@ -163,6 +163,7 @@
                 android:src="@drawable/ic_car" />
 
             <TextView
+                android:id="@+id/card_shahar_aro_rejim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -189,7 +190,7 @@
             android:backgroundTint="@color/green"
             android:text="@string/liniyaga_chiqish"
             android:textAllCaps="false"
-            android:visibility="visible"
+            android:visibility="gone"
             app:cardCornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="@id/card_rejim"
             app:layout_constraintStart_toStartOf="@id/card_rejim"
@@ -221,7 +222,7 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/gray_for_cardview"
             android:orientation="vertical"
-            android:visibility="gone"
+            android:visibility="visible"
             app:cardCornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="@id/card_rejim"
             app:layout_constraintStart_toStartOf="@id/card_rejim"
@@ -296,7 +297,6 @@
             android:backgroundTint="@color/orange"
             android:text="@string/liniyaga_chiqish"
             android:textAllCaps="false"
-            android:visibility="visible"
             app:cardCornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="@id/card_taxi_fer_tash"
             app:layout_constraintStart_toStartOf="@id/card_taxi_fer_tash"

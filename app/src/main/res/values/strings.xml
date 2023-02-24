@@ -100,4 +100,10 @@
     <string name="qo_shish">Qo\'shish</string>
     <string name="offlayn_band_qilingan">Offlayn band qilingan</string>
     <string name="onlayn_band_qilingan">Onlayn band qilingan</string>
+    <string name="qo_qon">Qo\'qon</string>
+    <string name="tariflar">Tariflar</string>
+    <string name="ok">OK</string>
+    <string name="_100_000_so_m">100 000 so\'m</string>
+    <string name="russia">Русский</string>
+    <string name="english">English</string>
 </resources>

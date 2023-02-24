@@ -26,22 +26,21 @@ class ChooseLanguageFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnRusEnable.setOnClickListener {
-            binding.btnRusEnable.visibility = View.GONE
-            binding.btnRusDisable.visibility = View.VISIBLE
+        binding.btnRusDisabled.setOnClickListener {
+            it.visibility = View.GONE
+            binding.btnRusEnabled.visibility = View.VISIBLE
             chooseLanguageFragmentToPros()
         }
 
-        //здесь можно сделать фабричный метод, чтобы код не дублировался, но потом
-        binding.btnEngEnable.setOnClickListener {
-            binding.btnEngEnable.visibility = View.GONE
-            binding.btnEngDisable.visibility = View.VISIBLE
+        binding.btnUzbDisabled.setOnClickListener {
+            it.visibility = View.GONE
+            binding.btnUzbEnabled.visibility = View.VISIBLE
             chooseLanguageFragmentToPros()
         }
 
-        binding.btnUzbEnable.setOnClickListener {
-            binding.btnUzbEnable.visibility = View.GONE
-            binding.btnUzbDisable.visibility = View.VISIBLE
+        binding.btnEngDisabled.setOnClickListener {
+            it.visibility = View.GONE
+            binding.btnEngEnabled.visibility = View.VISIBLE
             chooseLanguageFragmentToPros()
         }
     }
@@ -53,9 +52,5 @@ class ChooseLanguageFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    companion object {
-        const val KEY_LANGUAGE = ""
     }
 }
