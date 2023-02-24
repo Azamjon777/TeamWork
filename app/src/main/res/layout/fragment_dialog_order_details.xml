@@ -55,11 +55,28 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="8dp"
-            android:src="@drawable/ic_from_to" />
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ellipse" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="16sp"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/line" />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/vector" />
 
         <View
             android:layout_width="200dp"
@@ -103,11 +120,28 @@
         app:layout_constraintTop_toBottomOf="@id/card_from_fer_to_tash">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="8dp"
-            android:src="@drawable/ic_from_to" />
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ellipse" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="16sp"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/line" />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/vector" />
 
         <View
             android:layout_width="200dp"
