@@ -73,6 +73,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/text_about_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/bo_sh"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/circle_add_green"
+            app:layout_constraintStart_toEndOf="@id/circle_add_green"
+            app:layout_constraintTop_toTopOf="@id/circle_add_green" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circle_add_yellow"
             android:layout_width="15dp"
@@ -83,6 +94,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/circle_add_green" />
 
+        <TextView
+            android:id="@+id/text_about_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/offlayn_band_qilingan"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/circle_add_yellow"
+            app:layout_constraintStart_toEndOf="@id/circle_add_yellow"
+            app:layout_constraintTop_toTopOf="@id/circle_add_yellow" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circle_add_red"
             android:layout_width="15dp"
@@ -92,6 +114,17 @@
             android:src="@drawable/circle_add_red"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />
+
+        <TextView
+            android:id="@+id/text_about_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/onlayn_band_qilingan"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/circle_add_red"
+            app:layout_constraintStart_toEndOf="@id/circle_add_red"
+            app:layout_constraintTop_toTopOf="@id/circle_add_red" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/first_card_bosh"
@@ -124,24 +157,13 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />
 
-                    <!--<de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/circle_img_in_card1_yellow"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="25dp"
-                        android:src="@drawable/ic_circle_add_yellow"
-                        android:visibility="gone"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />-->
-
                     <TextView
                         android:id="@+id/text_can_be_changed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="21dp"
                         android:layout_marginTop="10dp"
-                        android:text="@{viewModel.textBoshOrBand.toString()}"
+                        android:text="@{viewModel.textBoshOrBand}"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         tools:ignore="SmallSp" />
@@ -213,7 +235,7 @@
                             android:layout_width="22dp"
                             android:layout_height="22dp"
                             android:layout_marginStart="20dp"
-                            android:layout_marginTop="25dp"
+                            android:layout_marginTop="16dp"
                             android:src="@drawable/ic_circle_add_green"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />
@@ -221,7 +243,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="21dp"
+                            android:layout_marginStart="20dp"
                             android:layout_marginTop="10dp"
                             android:text="@string/bo_sh"
                             android:textColor="@color/black"
@@ -286,7 +308,7 @@
                             android:layout_width="22dp"
                             android:layout_height="22dp"
                             android:layout_marginStart="20dp"
-                            android:layout_marginTop="25dp"
+                            android:layout_marginTop="15dp"
                             android:src="@drawable/ic_circle_add_green"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />
@@ -294,7 +316,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="21dp"
+                            android:layout_marginStart="20dp"
                             android:layout_marginTop="10dp"
                             android:text="@string/bo_sh"
                             android:textColor="@color/black"
@@ -358,7 +380,7 @@
                             android:layout_width="22dp"
                             android:layout_height="22dp"
                             android:layout_marginStart="20dp"
-                            android:layout_marginTop="25dp"
+                            android:layout_marginTop="15dp"
                             android:src="@drawable/ic_circle_add_green"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/circle_add_yellow" />
@@ -366,7 +388,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="21dp"
+                            android:layout_marginStart="20dp"
                             android:layout_marginTop="10dp"
                             android:text="@string/bo_sh"
                             android:textColor="@color/black"

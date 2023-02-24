@@ -98,4 +98,6 @@
     <string name="olib_tashlash">Olib tashlash</string>
     <string name="telefon_raqam">Telefon raqam</string>
     <string name="qo_shish">Qo\'shish</string>
+    <string name="offlayn_band_qilingan">Offlayn band qilingan</string>
+    <string name="onlayn_band_qilingan">Onlayn band qilingan</string>
 </resources>

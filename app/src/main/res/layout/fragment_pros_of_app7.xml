@@ -76,7 +76,8 @@
             android:id="@+id/next_to_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp"
             android:text="@string/text_get_started"
             android:textAllCaps="true"
             android:textColor="@color/green"
@@ -85,16 +86,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/seven_out_of_7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:text="@string/_7_7"
-            android:textAllCaps="true"
-            android:textColor="@color/green"
-            android:textSize="20sp"
-            android:textStyle="bold"
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="8dp"
+            android:layout_marginBottom="58dp"
+            android:src="@drawable/pagination7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
