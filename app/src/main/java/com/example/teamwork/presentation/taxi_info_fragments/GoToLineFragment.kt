@@ -23,9 +23,6 @@ class GoToLineFragment : Fragment() {
         )[MyViewModel::class.java]
     }
 
-    private val yellow = R.color.yellow
-    private val green = R.color.green
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,6 +36,10 @@ class GoToLineFragment : Fragment() {
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
 
+        clicks()
+    }
+
+    private fun clicks() {
         binding.imgBack.setOnClickListener {
             activity?.finish()
         }

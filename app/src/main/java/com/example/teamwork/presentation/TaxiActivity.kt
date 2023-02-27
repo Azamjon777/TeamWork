@@ -18,6 +18,20 @@ class TaxiActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
+        clicks()
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            return super.onBackPressed()
+        } else {
+            Toast.makeText(this, "Chiqish uchun yana bosing", Toast.LENGTH_SHORT).show()
+        }
+        backPressedTime = System.currentTimeMillis()
+    }
+
+    private fun clicks() {
         binding.goToLinePopup.setOnClickListener {
             val dialogFragment = DialogOrderDetailsFragment()
             dialogFragment.show(supportFragmentManager, "CustomDialog")
@@ -31,15 +45,5 @@ class TaxiActivity : AppCompatActivity() {
         binding.goToLinePopupOrange.setOnClickListener {
             startActivity(Intent(this, TaxiContainerActivity::class.java))
         }
-    }
-
-    @Deprecated("Deprecated in Java")
-    override fun onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            return super.onBackPressed()
-        } else {
-            Toast.makeText(this, "Chiqish uchun yana bosing", Toast.LENGTH_SHORT).show()
-        }
-        backPressedTime = System.currentTimeMillis()
     }
 }

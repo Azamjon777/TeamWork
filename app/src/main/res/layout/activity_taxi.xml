@@ -327,7 +327,7 @@
             android:layout_alignParentBottom="true"
             android:background="@drawable/bottom_bg"
             app:itemIconTint="@drawable/bottom_nav_selector"
-            app:itemTextColor="@color/white"
+            app:itemTextColor="@drawable/bottom_nav_selector"
             app:labelVisibilityMode="labeled"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
