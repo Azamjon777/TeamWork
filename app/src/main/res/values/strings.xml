@@ -106,4 +106,11 @@
     <string name="_100_000_so_m">100 000 so\'m</string>
     <string name="russia">Русский</string>
     <string name="english">English</string>
+    <string name="title_activity_login1">Login1Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

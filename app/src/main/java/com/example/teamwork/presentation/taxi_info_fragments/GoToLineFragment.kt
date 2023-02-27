@@ -61,5 +61,35 @@ class GoToLineFragment : Fragment() {
                 dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
             }
         }
+
+        binding.secondCardBosh.setOnClickListener {
+            if (viewModel.textBoshOrBand.value == "Band") {
+                val dialogFragment = YolovchiMalumotiDialogFragment()
+                dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
+            } else if (viewModel.textBoshOrBand.value == "Bo'sh") {
+                val dialogFragment = YolovchiQoshishDialogFragment()
+                dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
+            }
+        }
+
+        binding.thirdCardBosh.setOnClickListener {
+            if (viewModel.textBoshOrBand.value == "Band") {
+                val dialogFragment = YolovchiMalumotiDialogFragment()
+                dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
+            } else if (viewModel.textBoshOrBand.value == "Bo'sh") {
+                val dialogFragment = YolovchiQoshishDialogFragment()
+                dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
+            }
+        }
+
+        binding.fourthCardBosh.setOnClickListener {
+            if (viewModel.textBoshOrBand.value == "Band") {
+                val dialogFragment = YolovchiMalumotiDialogFragment()
+                dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
+            } else if (viewModel.textBoshOrBand.value == "Bo'sh") {
+                val dialogFragment = YolovchiQoshishDialogFragment()
+                dialogFragment.show(requireActivity().supportFragmentManager, "CustomDialog")
+            }
+        }
     }
 }

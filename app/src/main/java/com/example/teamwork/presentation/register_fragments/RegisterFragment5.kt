@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.teamwork.databinding.FragmentRegister5Binding
+import com.example.teamwork.presentation.Login1Activity
 import com.example.teamwork.presentation.MyViewModel
-import com.example.teamwork.presentation.TaxiActivity
 
 class RegisterFragment5 : Fragment() {
     private var _binding: FragmentRegister5Binding? = null
@@ -38,7 +38,7 @@ class RegisterFragment5 : Fragment() {
             val textPassword = binding.etPassword.text.toString()
             val textConfirmPassword = binding.etConfirmPassword.text.toString()
             if (viewModel.validatePassword(textPassword, textConfirmPassword)) {
-                val intent = Intent(activity, TaxiActivity::class.java)
+                val intent = Intent(activity, Login1Activity::class.java)
                 startActivity(intent)
                 activity?.finish()
             } else {
