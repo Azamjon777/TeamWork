@@ -45,5 +45,10 @@ class TaxiActivity : AppCompatActivity() {
         binding.goToLinePopupOrange.setOnClickListener {
             startActivity(Intent(this, TaxiContainerActivity::class.java))
         }
+
+        binding.icBurgerMenu.setOnClickListener {
+            val intent = Intent(this, SafetyContainerActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
