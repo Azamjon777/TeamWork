@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/safety_nav_graph"
+    app:startDestination="@id/safety1Fragment">
+
+    <fragment
+        android:id="@+id/safety1Fragment"
+        android:name="com.example.teamwork.presentation.taxi_info_fragments.Safety1Fragment"
+        android:label="fragment_safety1"
+        tools:layout="@layout/fragment_safety1" />
+</navigation>

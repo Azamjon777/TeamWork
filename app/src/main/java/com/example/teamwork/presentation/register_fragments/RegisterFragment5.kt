@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.teamwork.databinding.FragmentRegister5Binding
-import com.example.teamwork.presentation.Login1Activity
+import com.example.teamwork.presentation.activities.Login1Activity
 import com.example.teamwork.presentation.MyViewModel
 
 class RegisterFragment5 : Fragment() {

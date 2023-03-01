@@ -1,4 +1,4 @@
-package com.example.teamwork.presentation
+package com.example.teamwork.presentation.activities
 
 import android.content.Intent
 import android.os.Bundle

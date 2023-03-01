@@ -6,18 +6,6 @@
     android:layout_height="370dp"
     tools:context=".presentation.taxi_info_fragments.DialogOrderDetailsFragment">
 
-    <TextView
-        android:id="@+id/dialog_choose_way"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:text="@string/yo_nalishni_tanlang"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <RadioGroup
         android:id="@+id/radio_group_choose"
         android:layout_width="wrap_content"

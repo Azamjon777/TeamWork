@@ -11,7 +11,7 @@ import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import com.example.teamwork.R
-import com.example.teamwork.presentation.TaxiContainerActivity
+import com.example.teamwork.presentation.activities.TaxiContainerActivity
 
 
 class DialogOrderDetailsFragment() : DialogFragment() {

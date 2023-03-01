@@ -1,4 +1,4 @@
-package com.example.teamwork.presentation
+package com.example.teamwork.presentation.activities
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -20,6 +20,7 @@ class Login1Activity : AppCompatActivity() {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
 
         fetchLocation()
+        startActivity(Intent(this, TaxiActivity::class.java))
     }
 
     private fun fetchLocation() {
@@ -41,7 +42,6 @@ class Login1Activity : AppCompatActivity() {
         task.addOnSuccessListener {
             if (it != null) {
                 Toast.makeText(this, "${it.latitude} ${it.longitude}", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, TaxiActivity::class.java))
             }
         }
     }
