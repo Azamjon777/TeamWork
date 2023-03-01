@@ -16,7 +16,7 @@
         android:theme="@style/Theme.TeamWork"
         tools:targetApi="31" >
         <activity
-            android:name=".SafetyContainerActivity"
+            android:name=".presentation.activities.SafetyContainerActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.activities.Login1Activity"

@@ -39,10 +39,10 @@ class Login1Activity : AppCompatActivity() {
             )
             return
         }
-        task.addOnSuccessListener {
-            if (it != null) {
-                Toast.makeText(this, "${it.latitude} ${it.longitude}", Toast.LENGTH_SHORT).show()
-            }
-        }
+//        task.addOnSuccessListener {
+//            if (it != null) {
+//                Toast.makeText(this, "${it.latitude} ${it.longitude}", Toast.LENGTH_SHORT).show()
+//            }
+//        }
     }
 }
